@@ -27,7 +27,7 @@ SELECT COUNT (DISTINCT Id) AS Total_Ids
 FROM FitBitProject..weight_log
 --8 Users
 
---Insufficient data in the ëweight_logí and ëheartrateí datasets hinders the progression of our analysis
+--Insufficient data in the ‚Äòweight_log‚Äô and ‚Äòheartrate‚Äô datasets hinders the progression of our analysis
 
 SELECT Id,
 COUNT(Id) AS Days_of_Activity
@@ -154,7 +154,7 @@ FROM FitBitProject..daily_activity
 GROUP BY WeekDay
 --Users spend most of their time in sedentary activities, with no significant variation in activity levels throughout the week. It seems users are consistent in their active minute output each day. Bellabeat could capitalize on this by encouraging users to aim for higher goals, particularly in very active or fairly active minutes. This could potentially increase overall daily activity levels.
 
---According to the CDC, adults need 150 minutes of moderate-intensity physical activity each week. This can be achieved through various forms of exercise, including those categorized as ìVery Activeî and ìFairly Activeî.
+--According to the CDC, adults need 150 minutes of moderate-intensity physical activity each week. This can be achieved through various forms of exercise, including those categorized as ‚ÄúVery Active‚Äù and ‚ÄúFairly Active‚Äù.
 SELECT 
     Id,
 	ROUND ((avg(VeryActiveMinutes) + avg(FairlyActiveMinutes)), 2) AS Avg_Total_Active_Minutes
@@ -223,7 +223,7 @@ WHERE Date BETWEEN '5/1/2016' AND '5/7/2016'
 GROUP BY Id) as SubQuery
 GROUP BY CDC_Recommendations
 
---Upon comparing the activity data from April and May, I observed no substantial changes in the weekly activity duration. However, itís important to note that these data points are only a week apart, and the overall data collection period is relatively short. The dataset summary (BellaBeat Tracker Data) indicates that data was collected from March 12, 2016, to May 12, 2016. However, for most users, data tracking didnít start until April 12, 2016. This suggests that we only have one monthís worth of data to analyze. This limited timeframe may not be sufficient to observe any significant changes in user habits from the time they started using the wearable device until the end of the data collection period.
+--Upon comparing the activity data from April and May, I observed no substantial changes in the weekly activity duration. However, it‚Äôs important to note that these data points are only a week apart, and the overall data collection period is relatively short. The dataset summary (BellaBeat Tracker Data) indicates that data was collected from March 12, 2016, to May 12, 2016. However, for most users, data tracking didn‚Äôt start until April 12, 2016. This suggests that we only have one month‚Äôs worth of data to analyze. This limited timeframe may not be sufficient to observe any significant changes in user habits from the time they started using the wearable device until the end of the data collection period.
 SELECT 
 Time
 FROM FitBitProject..heartrate
@@ -265,10 +265,10 @@ FROM FitBitProject..daily_activity
 GROUP BY Id) As SubQuery
 Group By User_Type
 
---Upon analyzing the data, we can categorize our users into two main groups: ëModerately Active Lifestyle & Sedentary Lifestyleí users and ëActive Lifestyleí users. 
---The distribution is almost evenly split, with 17 users (52%) falling into the ëModerately Active Lifestyle & Sedentary Lifestyleí category and 16 users (48%) classified as ëActive Lifestyleí.
+--Upon analyzing the data, we can categorize our users into two main groups: ‚ÄòModerately Active Lifestyle & Sedentary Lifestyle‚Äô users and ‚ÄòActive Lifestyle‚Äô users. 
+--The distribution is almost evenly split, with 17 users (52%) falling into the ‚ÄòModerately Active Lifestyle & Sedentary Lifestyle‚Äô category and 16 users (48%) classified as ‚ÄòActive Lifestyle‚Äô.
 --This distribution aligns closely with our earlier findings when we examined active minutes. 
---When we excluded the ëLightlyActiveMinutesí from our analysis, we found that 17 users (52%) adhered to the CDCís recommendation of engaging in 150 active minutes per week. 
+--When we excluded the ‚ÄòLightlyActiveMinutes‚Äô from our analysis, we found that 17 users (52%) adhered to the CDC‚Äôs recommendation of engaging in 150 active minutes per week. 
 --Conversely, 13 users (39%) fell short of these guidelines. Additionally, we found that data was unavailable for 3 users (9%) for that particular week.
 
 
@@ -318,7 +318,7 @@ ROUND((AVG(CAST(s.TotalMinutesAsleep AS DECIMAL))/60), 2) AS AvgTotalHoursAsleep
 FROM FitBitProject..daily_activity AS a
 INNER JOIN FitBitProject..daily_sleep AS s ON a.Id=s.Id
 GROUP BY a.Id
---The graph indicates that a majority of users who achieved a minimum of 7 hours of sleep tended to have a higher step count. However, itís noteworthy that most users did not meet the recommended daily average of 10,000 steps.
+--The graph indicates that a majority of users who achieved a minimum of 7 hours of sleep tended to have a higher step count. However, it‚Äôs noteworthy that most users did not meet the recommended daily average of 10,000 steps.
 
 
 ----Total Step vs Total Calories
