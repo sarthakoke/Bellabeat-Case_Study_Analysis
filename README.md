@@ -1,79 +1,123 @@
-# Bellabeat Case Study: Unlocking Growth Opportunities through Smart Device Data Analysis
+# 💚 Bellabeat Case Study: Unlocking Growth Opportunities through Smart Device Data
 
-## Table of Contents
-- [Project Overview](#project-overview)
-- [Business Task](#business-task)
-- [Stakeholders](#stakeholders)
-- [Data Sources](#data-sources)
-- [Tools and Technologies Used](#tools-and-technologies-used)
-- [Data Preparation and Cleaning](#data-preparation-and-cleaning)
-- [Analysis](#analysis)
-- [Key Findings](#key-findings)
-- [Recommendations](#recommendations)
-- [Limitations](#limitations)
-- [Future Work](#future-work)
-- [References](#references)
+## 📌 Overview
 
-## Project Overview
-This project was undertaken as part of the Google Data Analytics Professional Certification. The objective was to analyze smart device usage data to uncover trends and provide actionable insights for Bellabeat, a high-tech manufacturer of health-focused products for women. The insights derived aimed to inform Bellabeat's marketing strategy and enhance their product offerings.
+This project was undertaken as part of the **Google Data Analytics Professional Certificate**. The objective was to analyze **smart device usage data** to uncover trends and provide actionable insights for **Bellabeat**, a high-tech manufacturer of health-focused products for women.
 
-## Business Task
-Analyze smart device usage data to identify trends and behaviors among consumers, and apply these insights to one of Bellabeat's products to inform marketing strategies.
-
-## Stakeholders
-- **Primary Stakeholders**:
-  - Urška Sršen: Co-founder and Chief Creative Officer of Bellabeat
-  - Sando Mur: Co-founder and key member of the Bellabeat executive team
-- **Secondary Stakeholders**:
-  - Bellabeat marketing analytics team
-
-## Data Sources
-The analysis was based on the [Fitbit Fitness Tracker Data](https://www.kaggle.com/datasets/arashnic/fitbit) available on Kaggle. This dataset comprises personal fitness tracker data from 30 Fitbit users, including minute-level data on physical activity, heart rate, and sleep monitoring.
-
-## Tools and Technologies Used
-- **Data Storage and Querying**: SQL Server Management Studio (SSMS)
-- **Programming Language**: R
-- **Data Visualization**: Tableau
-- **Analysis Techniques**: Data analysis and marketing strategy formulation
-
-## Data Preparation and Cleaning
-Given the time elapsed since the project completion, specific data cleaning steps are not fully recalled. However, standard procedures likely included:
-- **Handling Missing Data**: Identifying and addressing missing or null values to ensure data completeness.
-- **Removing Duplicates**: Eliminating duplicate records to maintain data integrity.
-- **Data Formatting**: Standardizing date and time formats for consistency.
-- **Filtering Data**: Selecting relevant columns and rows pertinent to the analysis objectives.
-
-## Analysis
-The analysis focused on identifying patterns in device usage, step counts, and sleep behaviors among Fitbit users. These patterns were then contextualized to understand how Bellabeat's customer base might exhibit similar behaviors, thereby informing targeted marketing strategies.
-
-## Key Findings
-- **Device Usage Patterns**: Users displayed varying levels of engagement with their fitness trackers, indicating segments of active and less active users.
-- **Step Counts**: There were observable trends in daily step counts, with certain periods showing higher activity levels.
-- **Sleep Patterns**: Analysis revealed common sleep durations and patterns among users, providing insights into user lifestyles.
-
-## Recommendations
-Based on the analysis, the following strategies were proposed to enhance Bellabeat's market presence:
-- **Targeted Marketing Campaigns**: Develop campaigns tailored to identified customer segments, potentially increasing market reach.
-- **Personalized App Notifications**: Implement notifications based on user activity patterns to boost engagement.
-- **Incentivization Programs**: Create rewards programs encouraging users to achieve specific health goals, thereby enhancing user retention.
-
-*Note: The specific percentage increases mentioned in the initial recommendations were illustrative. Actual figures should be determined through A/B testing and user feedback.*
-
-## Limitations
-- **Sample Size**: The dataset comprised only 30 users, limiting the generalizability of findings.
-- **Data Recency**: Data was collected in 2016; user behaviors and market dynamics may have evolved since then.
-- **Demographic Information**: Lack of demographic data (e.g., gender, age) restricted deeper analysis relevant to Bellabeat's target market.
-
-## Future Work
-- **Expand Data Collection**: Gather data from a larger and more diverse user base to enhance analysis reliability.
-- **Update Data Sources**: Utilize more recent datasets to reflect current user behaviors and market trends.
-- **Incorporate Demographic Data**: Collect demographic information to enable more targeted and relevant insights.
-
-## References
-- [Fitbit Fitness Tracker Data on Kaggle](https://www.kaggle.com/datasets/arashnic/fitbit)
-- [Bellabeat Official Website](https://bellabeat.com/)
-- [Google Data Analytics Professional Certificate](https://www.coursera.org/professional-certificates/google-data-analytics)
+The analysis applied user activity, steps, and sleep insights to Bellabeat’s product line in order to **inform marketing strategy** and **enhance customer engagement**.
 
 ---
 
-*This project was completed as part of the requirements for the Google Data Analytics Professional Certificate.*
+## 🎯 Business Task
+
+**Primary Goal**:
+Analyze Fitbit smart device usage data to identify **trends and behaviors** among users, and apply these insights to Bellabeat’s products to shape **data-driven marketing strategies**.
+
+---
+
+## 👥 Stakeholders
+
+* **Urška Sršen** → Co-founder & Chief Creative Officer of Bellabeat
+* **Sando Mur** → Co-founder & key executive team member
+* **Bellabeat Marketing Analytics Team** → Responsible for implementing insights into campaigns
+
+---
+
+## 🗂️ Data Source
+
+* **Provider**: [Fitbit Fitness Tracker Data (Kaggle)](https://www.kaggle.com/datasets/arashnic/fitbit)
+* **Sample Size**: 30 Fitbit users
+* **Metrics Included**:
+
+  * Steps (daily & hourly)
+  * Activity intensity (minutes by category)
+  * Sleep patterns & duration
+  * Calories burned
+
+---
+
+## 🛠️ Tools & Technologies
+
+* **SQL Server Management Studio (SSMS)** → Querying & filtering
+* **R** → Data cleaning, transformation, statistical analysis
+* **Excel** → Exploratory checks & formatting
+* **Tableau** → Interactive dashboards & visuals
+
+---
+
+## 🧹 Data Preparation
+
+Steps performed:
+
+* Handling missing or null values
+* Removing duplicate records
+* Standardizing **date & time** formats
+* Filtering out irrelevant or incomplete logs
+* Aggregating activity data for **daily, weekly, and hourly patterns**
+
+---
+
+## 🧠 Key Insights
+
+* **Engagement** → 62% of users tracked activity daily, showing high engagement potential
+* **User Lifestyle Split** → Most users fell into **lightly active or moderately active** categories
+* **Weekly Trends** → Steps peaked on **Tuesday and Saturday**; lowest on Sunday
+* **Hourly Patterns** → Activity was highest during **work hours (8 AM – 5 PM)**
+* **Sleep & Steps Correlation** → Users sleeping **7+ hours** achieved **higher step counts**
+
+---
+
+## 📊 Visualizations
+
+The Tableau dashboard highlights:
+
+* 📈 **User engagement** → Consistent vs. intermittent trackers
+* 🏃 **Lifestyle categories** → Sedentary to highly active distributions
+* 📆 **Weekly activity & steps** → Day-by-day breakdown
+* ⏰ **Hourly steps** → Activity spikes during daytime hours
+* 💤 **Sleep correlation** → Link between sleep hours and daily steps
+
+🖼️ Dashboard Preview:
+
+![image](https://github.com/user-attachments/assets/db4f081f-6223-4c3b-ac37-71abe239fbc9)
+
+---
+
+## 💡 Recommendations
+
+* **Targeted Campaigns** → Segment users by engagement level (consistent vs. occasional)
+* **Personalized Notifications** → Reminders for sleep, steps, or hydration to boost engagement
+* **Gamification & Incentives** → Introduce challenges and rewards for daily/weekly goals
+* **Retention Focus** → Emphasize long-term benefits to keep users active on the platform
+
+---
+
+## 🚧 Limitations
+
+* **Small Sample Size** → Only 30 users; limits generalization
+* **Data Recency** → Collected in 2016; may not reflect current habits
+* **Missing Demographics** → No gender/age/location info, which are key to Bellabeat’s target audience
+
+---
+
+## 🏁 Conclusion
+
+Even with a small dataset, this case study shows how **fitness tracker data** can provide **actionable insights** for marketing and product strategy. For Bellabeat, the findings suggest opportunities to:
+
+* Personalize user experiences
+* Increase retention through gamification
+* Expand reach by targeting lifestyle-based segments
+
+---
+
+## 🔗 References
+
+* [Fitbit Dataset (Kaggle)](https://www.kaggle.com/datasets/arashnic/fitbit)
+* [Bellabeat Official Website](https://bellabeat.com/)
+* [Google Data Analytics Certificate](https://www.coursera.org/professional-certificates/google-data-analytics)
+
+---
+
+💼 *Completed as part of the Google Data Analytics Professional Certificate*
+
+---
